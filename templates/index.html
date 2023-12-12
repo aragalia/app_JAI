@@ -1,0 +1,27 @@
+{% extends 'layout.html' %} {% block content %}
+<!-- --------halaman home--------- -->
+<section class="home" id="home">
+  <div class="content">
+    <div class="textbox">
+      <h2><b>HELLO</b></h2>
+      <h1>I'am JAI,<span>Jeruk AI</span></h1>
+      <p>
+        Jai akan membantu mu untuk mendeteksi kematangan buah jeruk yang efektif
+        untukmu, ayo segera deteksi kematangannya agar kamu bisa menikmati buah
+        yang memiliki kematangan yang maksimal. Kami membantu para petani untuk
+        menghasilkan buah jeruk yang berkualitas dan tidak mengecewakan para
+        konsumen untuk menikmati kematangan jeruk yang ideal, ayo, segera
+        deteksi kematangan jeruk mu, apakah tingkat kematangan jeruk mu sudah
+        ideal atau belum. Agar kamu bisa lebih cepat menikmatinya!
+      </p>
+      <a href="{{ url_for('detect')}}">Let's Go</a>
+    </div>
+    <div class="imgbox">
+      <img
+        src="{{ url_for('static', filename='/img/jaiiiiii.png')}}"
+        class="gambarjai"
+      />
+    </div>
+  </div>
+</section>
+{% endblock %}

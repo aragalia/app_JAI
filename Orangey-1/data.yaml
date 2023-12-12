@@ -1,0 +1,14 @@
+names:
+- Bunga
+- Jeruk Belum Matang
+- Jeruk Sudah Matang
+nc: 3
+roboflow:
+  license: CC BY 4.0
+  project: orangey
+  url: https://universe.roboflow.com/project-jszcb/orangey/dataset/1
+  version: 1
+  workspace: project-jszcb
+test: ../test/images
+train: Orangey-1/train/images
+val: Orangey-1/valid/images

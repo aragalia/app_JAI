@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <section class="up" id="up">
+      <br />
+      <br />
+      <div class="row">
+        <div class="col-sm-6">
+          <br />
+          <h1><b>Upload Foto</b></h1>
+          <br /><br />
+          <form method="post">
+            <div id="preview"></div>
+            <br />
+            <p>Silahkan Upload Sebuah Gambar</p>
+            <p>
+              <input
+                type="file"
+                name="upload_file"
+                class="form-control"
+                placeholder="Enter Name"
+                id="upload_file"
+                onchange="getImagePreview(event)"
+              />
+            </p>
+            <input type="submit" name="submit" class="submit" />
+          </form>
+        </div>
+
+        <div class="col-sm-6">
+          <br />
+          <div id="hasil_prediksi" align="center">
+            <h1><b>Hasil Prediksi</b></h1>
+            <!---------- Hasil Prediksi Disini ---------->
+          </div>
+        </div>
+      </div>
+    </section>
+{% endblock %}
